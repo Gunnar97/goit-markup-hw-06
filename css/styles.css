@@ -596,7 +596,7 @@ img {
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.2.em;
+    letter-spacing: 0.2em;
 }
 
 .subscribe-form-input {
@@ -615,7 +615,7 @@ img {
     
 }
 
-.subscribe-container {
+.subscribe-form {
     display: flex;
     justify-content: baseline;
     align-items: first center;
