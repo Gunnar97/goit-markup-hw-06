@@ -442,8 +442,8 @@
             </label>
             <button class="subscribe-button btn-hero" type="submit">
               <span class="btn-title">Subscribe</span>
-              <svg class="footer-social-icon" width="24" height="24" fill="#F4F4FD">
-                <use href="./images/icons.svg#icon-footer-send"></use>
+              <svg class="footer-social-icon" width="24" height="24">
+                <use class="modal-form-icon-noactiv" href="./images/icons.svg#icon-footer-send"></use>
               </svg>
             </button>
             
@@ -498,11 +498,14 @@
                 </svg>
               </div>
             </div>
-            <label>
-              <span class="lable-text">Comment</span>
-              <textarea name="user-message" rows="10" placeholder="Text input"></textarea>
-            </label>
-          </div>
+
+            <div class="modal-input-container">
+              <label>
+                <span class="lable-text">Comment</span>
+                <textarea name="user-message" rows="10" placeholder="Text input"></textarea>
+              </label>
+            </div>
+        
 
           <label class="modal-form-agreement">
             <input class="modal-form-agreement-checkbox visually-hidden" type="checkbox" name="user-agreement" />
@@ -518,6 +521,7 @@
         </form>
       </div>
     </div>
+    
 
     <!-- /Modal window -->
     <script src="./modal.js"></script>
