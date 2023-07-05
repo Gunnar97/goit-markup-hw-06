@@ -844,14 +844,27 @@ img {
     margin-bottom: 16px;
 }
 
-textarea {
+.text-comment {
     resize: none;
     width: 100%;
     height: 120px;
     margin-bottom: 16px;
+    padding: 8px 16px; 
 
     border-radius: 4px;
-border: 1px solid  rgba(46, 47, 66, 0.40);
+    border: 1px solid  rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.text-comment:hover,
+.text-comment:focus {
+    border-color: var(--btn-hero-background);
 }
 
 .lable-text {
@@ -864,12 +877,19 @@ border: 1px solid  rgba(46, 47, 66, 0.40);
     letter-spacing: 0.03em; 
 }
 /* ======================== Checkbox ================= */
-.modal-form-agreement {
+.agreement-box {
     display: flex;
     align-items: center;
     gap:8px;
     margin-bottom: 24px;
 
+}
+
+.modal-form-agreement{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--lightslate)
 }
 
 .modal-form-agreement-checkbox{
@@ -882,6 +902,7 @@ border: 1px solid  rgba(46, 47, 66, 0.40);
 
 .modal-form-agreement-desc{
     color: #8E8F99;
+
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -920,26 +941,23 @@ border: 1px solid  rgba(46, 47, 66, 0.40);
     display: block;
     margin-left: auto;
     margin-right: auto;
-   width: 169px;
+   min-width: 169px;
    height: 56px;
     padding: 16px 32px;
     border-radius: 4px;
     background: var(--btn-hero-background);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-
-
-.modal-form-btn-next{
-    color: var(--active-font-color);
-    text-align: center;
 
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    color: var(--active-font-color);
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* ================ /Modal window============== */
 
@@ -950,9 +968,7 @@ border: 1px solid  rgba(46, 47, 66, 0.40);
     gap: 24px;
     margin-bottom: 72px;
 }
-.btn-item{
-    
-}
+
 
 .btn-menu{
     min-width: 69px;
