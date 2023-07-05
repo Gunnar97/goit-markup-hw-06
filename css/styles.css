@@ -840,6 +840,9 @@ img {
 .modal-form-input:focus + .modal-input-icons {
     fill: var(--btn-hero-background);
 }
+.text-box{
+    margin-bottom: 16px;
+}
 
 textarea {
     resize: none;
