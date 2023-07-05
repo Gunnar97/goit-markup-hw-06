@@ -641,11 +641,8 @@ img {
 
 
 .subscribe-button {
-    display: inline-flex;
+    display: flex;
     padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
     min-width: 165px;
     height: 40px;
     padding: 8px 24px;
@@ -655,6 +652,7 @@ img {
 }
 
 .btn-title{
+    display: block;
     color: var(--active-font-color);
     text-align: center;
 
@@ -663,6 +661,11 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+}
+
+
+.footer-social-icons {
+    margin-left: 16px;
 }
 
 /* ================= /FOOTER =====================FOOTER */
